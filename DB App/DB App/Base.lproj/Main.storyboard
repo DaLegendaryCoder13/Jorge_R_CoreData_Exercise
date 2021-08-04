@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DB_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EOY-Pk-e0P">
+                                <rect key="frame" x="37" y="68" width="81" height="30"/>
+                                <state key="normal" title="saveRecord">
+                                    <color key="titleColor" red="1" green="0.1421817403" blue="0.074866273959999993" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="saveRecord:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mGa-DE-OTl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dql-iW-wUQ">
+                                <rect key="frame" x="290" y="68" width="92" height="30"/>
+                                <state key="normal" title="deleteRecord">
+                                    <color key="titleColor" red="1" green="0.14218174025189012" blue="0.074866273960270791" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="deleteRecord:" destination="BYZ-38-t0r" eventType="touchUpInside" id="35c-qn-vX8"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="z4u-ZA-bN3">
+                                <rect key="frame" x="20" y="115" width="374" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="jNT-SS-oU3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Pochita.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="fK8-7u-oqc">
+                                <rect key="frame" x="54" y="157" width="305" height="391"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="               Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dN6-XI-PJn">
+                                <rect key="frame" x="113" y="572" width="187" height="115"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="115" id="WtD-IK-gbT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="1" green="0.94191725839959761" blue="0.19737761745326354" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="z4u-ZA-bN3" firstAttribute="top" secondItem="EOY-Pk-e0P" secondAttribute="bottom" constant="17" id="2vI-Vs-IKf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dN6-XI-PJn" secondAttribute="bottom" constant="175" id="34u-Ny-0Ll"/>
+                            <constraint firstItem="fK8-7u-oqc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="54" id="DCu-th-Tc7"/>
+                            <constraint firstItem="z4u-ZA-bN3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="KGH-Yf-db0"/>
+                            <constraint firstItem="EOY-Pk-e0P" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="37" id="KRt-fh-xOZ"/>
+                            <constraint firstItem="dN6-XI-PJn" firstAttribute="top" secondItem="fK8-7u-oqc" secondAttribute="bottom" constant="24" id="RC2-5N-8ud"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Dql-iW-wUQ" secondAttribute="trailing" constant="32" id="TnF-Ie-lCM"/>
+                            <constraint firstItem="EOY-Pk-e0P" firstAttribute="baseline" secondItem="Dql-iW-wUQ" secondAttribute="baseline" id="YA7-8l-rsP"/>
+                            <constraint firstItem="EOY-Pk-e0P" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="24" id="eeo-fR-NR7"/>
+                            <constraint firstItem="fK8-7u-oqc" firstAttribute="centerX" secondItem="dN6-XI-PJn" secondAttribute="centerX" id="k3X-k2-rcK"/>
+                            <constraint firstItem="fK8-7u-oqc" firstAttribute="top" secondItem="z4u-ZA-bN3" secondAttribute="bottom" constant="8" id="kMm-8u-Stn"/>
+                            <constraint firstItem="z4u-ZA-bN3" firstAttribute="centerX" secondItem="fK8-7u-oqc" secondAttribute="centerX" id="kqn-2i-0tt"/>
+                            <constraint firstItem="dN6-XI-PJn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="113" id="mKl-6u-EqI"/>
+                            <constraint firstItem="z4u-ZA-bN3" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="tId-RL-O8P"/>
+                            <constraint firstItem="EOY-Pk-e0P" firstAttribute="top" secondItem="Dql-iW-wUQ" secondAttribute="top" id="vSx-eV-wiz"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="displayDataHere" destination="dN6-XI-PJn" id="Ecg-TF-C5x"/>
+                        <outlet property="enterPochita" destination="z4u-ZA-bN3" id="iF8-Q7-EpS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="75.669642857142847"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Pochita.jpeg" width="400" height="400"/>
+    </resources>
+</document>
